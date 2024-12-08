@@ -1,30 +1,31 @@
+# NAME: Custom_Proxy
+# 强制代理列表，来自个人收集
 
-# Clash Rules for Blocking Ads in 番茄小说
-# Hostname Filtering
-  - DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, REJECT
-  - DOMAIN-SUFFIX, pangolin-sdk-toutiao.*, REJECT
-  - DOMAIN-SUFFIX, pstatp.com, REJECT
-  - DOMAIN-SUFFIX, pstatp.com.*, REJECT
-  - DOMAIN-SUFFIX, pglstatp-toutiao.com.*, REJECT
-  - DOMAIN-SUFFIX, pglstatp-toutiao.com, REJECT
-  - DOMAIN-SUFFIX, gurd.snssdk.com, REJECT
-  - DOMAIN-SUFFIX, gurd.snssdk.com.*, REJECT
-  - DOMAIN-SUFFIX, i-lq.snssdk.com, REJECT
-  - DOMAIN-SUFFIX, i-lq.snssdk.com.*, REJECT
-  - DOMAIN-SUFFIX, default.ixigua.com, REJECT
+# 番茄小说广告屏蔽规则
 
-# URL Filtering
-  - URL-REGEX, ^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer, REJECT
-  - URL-REGEX, ^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.snssdk.com\/api\/ad\/.+, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.byteimg\.com\/ad-app-package, REJECT
-  - URL-REGEX, ^https?:\/\/.+\.byteimg\.com\/web\.business\.image, REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.com,REJECT
+DOMAIN-SUFFIX,pangolin-sdk-toutiao.*,REJECT
+DOMAIN-SUFFIX,pstatp.com,REJECT
+DOMAIN-SUFFIX,pstatp.com.*,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com.*,REJECT
+DOMAIN-SUFFIX,pglstatp-toutiao.com,REJECT
+DOMAIN-SUFFIX,gurd.snssdk.com,REJECT
+DOMAIN-SUFFIX,gurd.snssdk.com.*,REJECT
+DOMAIN-SUFFIX,i-lq.snssdk.com,REJECT
+DOMAIN-SUFFIX,i-lq.snssdk.com.*,REJECT
+DOMAIN-SUFFIX,default.ixigua.com,REJECT
 
+# 广告和视频内容屏蔽
+URL-REGEX,^https?:\/\/.+\.pangolin-sdk-toutiao\.com\/api\/ad\/union\/sdk\/(get_ads|stats|settings)\/,REJECT
+URL-REGEX,^https?:\/\/.+\.pglstatp-toutiao\.com\/.+\/toutiao\.mp4,REJECT
+URL-REGEX,^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/(ad-app-package|ad)\/.+,REJECT
+URL-REGEX,^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/(obj|img)\/web\.business\.image\/.+,REJECT
+URL-REGEX,^https?:\/\/.+\.(pglstatp-toutiao|pstatp)\.com\/obj\/ad-pattern\/renderer,REJECT
+URL-REGEX,^https?:\/\/gurd\.snssdk\.com\/src\/server\/v3\/package,REJECT
+URL-REGEX,^https?:\/\/.+\.byteimg.com/tos-cn-i-1yzifmftcy\/(.+)-jpeg\.jpeg,REJECT
+URL-REGEX,^https?:\/\/.+\.pstatp\.com\/obj\/mosaic-legacy\/.+\?from\=ad,REJECT
+URL-REGEX,^https?:\/\/.+\.pstatp\.com\/bytecom\/resource\/track_log\/src\/.+,REJECT
+URL-REGEX,^https?:\/\/.+\.snssdk\.com\/video\/play\/1\/toutiao\/.+\/mp4,REJECT
+URL-REGEX,^https?:\/\/.+\.snssdk.com\/api\/ad\/.+,REJECT
+URL-REGEX,^https?:\/\/.+\.byteimg\.com\/ad-app-package,REJECT
+URL-REGEX,^https?:\/\/.+\.byteimg\.com\/web\.business\.image,REJECT
