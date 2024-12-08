@@ -1,7 +1,6 @@
 
 # Clash Rules for Blocking Ads in 番茄小说
 # Hostname Filtering
-rules:
   - DOMAIN-SUFFIX, pangolin-sdk-toutiao.com, REJECT
   - DOMAIN-SUFFIX, pangolin-sdk-toutiao.*, REJECT
   - DOMAIN-SUFFIX, pstatp.com, REJECT
@@ -29,6 +28,3 @@ rules:
   - URL-REGEX, ^https?:\/\/.+\.byteimg\.com\/ad-app-package, REJECT
   - URL-REGEX, ^https?:\/\/.+\.byteimg\.com\/web\.business\.image, REJECT
 
-# Default Policy
-  - GEOIP, CN, DIRECT
-  - MATCH, REJECT
