@@ -3,6 +3,7 @@
 # 部分域名可能和大陆域名列表存在重叠
 # 直连补充列表(国内域名不解析时，防止走代理使用)
 
+
 # ImmortalWrt 在线更新服务
 DOMAIN-SUFFIX,sysupgrade.kyarucloud.moe
 # ImmortalWrt 软件仓库
@@ -23,7 +24,7 @@ DOMAIN-SUFFIX,catsxp.com
 # 推送加
 DOMAIN-SUFFIX,pushplus.plus
 # 其他域名
-DOMAIN-SUFFIX,kit327.com
+#DOMAIN-SUFFIX,kit327.com
 # Windows 网络连接探测
 DOMAIN-SUFFIX,msftconnecttest.com
 DOMAIN-SUFFIX,msftncsi.com
@@ -76,7 +77,7 @@ DOMAIN-SUFFIX,wwwh.eu.org
 # 江苏健康通
 DOMAIN-SUFFIX,jsehealth.com
 # 国内 CDN
-DOMAIN-SUFFIX,cjjd19.com
+#DOMAIN-SUFFIX,cjjd19.com
 # UniGetUI
 DOMAIN-SUFFIX,powershellgallery.com
 # 魔兽世界 新手盒子
